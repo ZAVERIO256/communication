@@ -2,7 +2,99 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teacher Corner | Masaka District Digital Learning Hub</title>
 <meta name="description" content="Masaka District Digital Learning and Teacher Resource Hub for secondary school students, teachers and parents.">
-<link rel="stylesheet" href="css/style.css"></head><body>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Mobile layout improvements */
+* { box-sizing: border-box; }
+html, body { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+.container { width: min(100% - 24px, 1100px); margin-inline: auto; }
+.panel, .page-heading { min-width: 0; }
+.panel { overflow: hidden; }
+
+/* Keep the navigation on one line; swipe sideways on small screens */
+nav { width: 100%; }
+.nav-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding: 0 12px;
+}
+.nav-inner a { flex: 0 0 auto; white-space: nowrap; }
+
+/* Tables remain readable instead of squeezing every column */
+.table-scroll {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.table-scroll table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+.table-scroll th, .table-scroll td {
+  overflow-wrap: break-word;
+  vertical-align: middle;
+}
+
+/* Forms and content cards adapt to narrow screens */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+input, select, textarea, button { max-width: 100%; }
+textarea { width: 100%; }
+@media (max-width: 600px) {
+  .container { width: calc(100% - 24px); }
+  .topbar { gap: 10px; flex-wrap: wrap; }
+  .brand { min-width: 0; max-width: 100%; }
+  .brand strong { overflow-wrap: anywhere; }
+  .header-note { font-size: 0.8rem; }
+  .page-heading h1 { font-size: clamp(1.45rem, 6vw, 2rem); line-height: 1.2; }
+  .panel { padding: 16px; margin-block: 14px; }
+  .form-row { grid-template-columns: 1fr; }
+  .table-scroll table { min-width: 620px; }
+  .site-footer .footer-inner { display: grid; gap: 14px; }
+}
+</style>
+
+
+<style>
+/* Header and navigation stacking fix */
+.site-header {
+  position: relative !important;
+  top: auto !important;
+  z-index: 2 !important;
+  width: 100%;
+}
+nav {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: 3 !important;
+  width: 100%;
+  margin: 0;
+}
+.nav-inner {
+  position: relative !important;
+  top: auto !important;
+  transform: none !important;
+}
+</style>
+
+</head><body>
 <header class="site-header"><div class="topbar"><a class="brand" href="index.html"><div class="brand-mark">M</div>
 <div><strong>DIGITAL LEARNING & TEACHER RESOURCE HUB</strong><small>TEACH • LEARN • CONNECT • GROW</small></div></a>
 <div class="header-note">MASAKA DISTRICT<br>REPUBLIC OF UGANDA</div></div></header>
@@ -16,7 +108,7 @@
 <article class="card"><div class="emoji">🧑🏽‍💻</div><h3>Digital Teaching</h3><p>Use presentations, computers, 
 videos and offline materials where they support curriculum goals.</p></article><article class="card"><div class="emoji">🤝</div>
 <h3>Inclusive Classrooms</h3><p>Encourage participation and adapt learning activities to different learner needs and available resources.</p></article></section>
-<section class="panel"><h2>Professional development resource catalogue</h2><table><thead><tr><th>Resource</th>
+<section class="panel"><h2>Professional development resource catalogue</h2><div class="table-scroll"><table><thead><tr><th>Resource</th>
 <th>Purpose</th><th>Download</th></tr></thead><tbody>
 <tr><td>Digital Lesson Planning Guide</td><td>Structure lessons with clear outcomes and appropriate ICT.</td>
 <td><a href="pdfs/digital-lesson-planning-guide.pdf" download>Download PDF</a></td></tr>
@@ -24,7 +116,7 @@ videos and offline materials where they support curriculum goals.</p></article><
 <td><a href="pdfs/classroom-assessment-guide.pdf" download>Download PDF</a></td></tr>
 <tr><td>ICT Integration Tips</td><td>Select technology that supports intended learning outcomes.</td>
 <td><a href="pdfs/ict-integration-tips.pdf" download>Download PDF</a></td></tr>
-</tbody></table></section>
+</tbody></table></div></section>
 <section class="panel"><h2>Suggested professional practices</h2><ul class="clean"><li>Begin with the learning outcome before choosing a digital tool.</li>
 <li>Test equipment and open files before the lesson begins.</li><li>Prepare offline alternatives where internet access is unreliable.</li>
 <li>Protect learner information and follow school ICT policies.</li><li>Evaluate whether technology improved learner participation or understanding.</li></ul></section>
