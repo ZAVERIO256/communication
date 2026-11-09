@@ -1,0 +1,14 @@
+PDF RESOURCE PACK - MASAKA DISTRICT DIGITAL LEARNING & TEACHER RESOURCE HUB
+
+Included documents:
+1. s2-chemistry-revision-notes.pdf
+2. o-level-computer-studies-syllabus.pdf (study outline, not official syllabus)
+3. s3-biology-study-notes.pdf
+4. s4-mathematics-revision-paper.pdf (practice paper, not official past paper)
+5. digital-lesson-planning-guide.pdf
+6. classroom-assessment-guide.pdf
+7. ict-integration-tips.pdf
+8. ict-laboratory-rules-safety-chart.pdf
+
+These are original sample resources prepared for the prototype. They are not official Ministry, UNEB or district-issued publications.
+Keep these files inside the website's pdfs folder. The links in library.html and teachers.html use these exact filenames.

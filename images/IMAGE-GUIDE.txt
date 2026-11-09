@@ -1,0 +1,13 @@
+GENERATED IMAGE ASSETS FOR THE MASAKA DISTRICT DIGITAL LEARNING HUB
+
+masaka-learning-hub-banner.jpg  - branded hero banner used on the Home page
+masaka-school-computer-lab.jpg  - students using computers
+hardware-lesson.jpg            - teacher explaining computer hardware
+virtual-library.jpg             - books and digital library
+teacher-training.jpg            - teachers' professional development
+student-learning.jpg            - student corner / digital learning
+district-noticeboard.jpg        - sample district noticeboard visual
+digital-contact-support.jpg     - contact and digital support visual
+
+All images are local files. Keep this images folder beside the five HTML pages.
+The safety chart remains available as a separate printable PDF in the pdfs folder.
